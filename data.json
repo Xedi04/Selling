@@ -1,0 +1,41 @@
+{
+  "Selling": [
+    {
+      "id": 1,
+      "name": "bir",
+      "des": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+      "image": "./ASSETS/IMAGES/model_1_bg.jpg"
+    },
+    {
+      "id": 2,
+      "name": "berkwer",
+      "des": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+      "image": "http://127.0.0.1:5500/ASSETS/IMAGES/model_2_bg.jpg"
+    },
+    {
+      "id": 3,
+      "name": "uc",
+      "des": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+      "image": "./ASSETS/IMAGES/model_3_bg.jpg"
+    },
+    {
+      "id": 4,
+      "name": "dord",
+      "des": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+      "image": "./ASSETS/IMAGES/model_4_bg.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Wild West Hoodie",
+      "des": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+      "image": "./ASSETS/IMAGES/model_5_bg.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Wild West Hoodie",
+      "des": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+      "image": "./ASSETS/IMAGES/model_1_bg.jpg"
+    }
+  ],
+  "Fav": []
+}

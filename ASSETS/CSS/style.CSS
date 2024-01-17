@@ -1,0 +1,802 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 0 32px;
+}
+
+nav {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+}
+nav .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px 0;
+}
+nav .navbar .n-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .navbar .n-1 ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  list-style: none;
+}
+nav .navbar .n-1 ul li {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+nav .navbar .n-1 .p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+nav .navbar .n-1 .p p {
+  display: flex;
+  gap: 5px;
+  font-size: 17px;
+}
+nav .navbar .n-1 .p p i {
+  color: rgb(241, 104, 33);
+}
+nav .navbar .n-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .navbar .n-2 .logo {
+  font-size: 45px;
+  font-weight: 800;
+}
+nav .navbar .n-2 ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+nav .navbar .n-2 ul #a {
+  color: rgb(241, 104, 33);
+}
+nav .navbar .n-2 ul li {
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+nav .navbar .n-2 ul li:hover {
+  color: rgb(241, 104, 33);
+}
+nav .navbar .n-2 ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav .navbar .n-2 i {
+  font-size: 40px;
+  cursor: pointer;
+  display: none;
+}
+nav .navbar .menu {
+  width: 100%;
+  display: none;
+}
+nav .navbar .menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+nav .navbar .menu ul li {
+  font-size: 20px;
+  border-bottom: 1px solid black;
+}
+nav .navbar .menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.banner {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../IMAGES/hero_2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.banner .b-all {
+  width: 100%;
+  padding: 200px 0;
+}
+.banner .b-all .b-head {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+.banner .b-all .b-head h1 {
+  font-size: 90px;
+}
+.banner .b-all .b-head p {
+  font-size: 22px;
+  padding-right: 500px;
+}
+.banner .b-all .b-head .btn {
+  display: flex;
+  gap: 5px;
+}
+.banner .b-all .b-head .btn button {
+  border: 2px solid white;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.banner .b-all .b-head .btn #bir {
+  background: none;
+  color: white;
+  width: 170px;
+}
+.banner .b-all .b-head .btn #bir:hover {
+  background-color: white;
+  color: black;
+}
+.banner .b-all .b-head .btn #iki {
+  width: 200px;
+}
+.banner .b-all .b-head .btn #iki:hover {
+  background: none;
+  color: white;
+}
+
+#top {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgb(241, 104, 33);
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.popular {
+  width: 100%;
+}
+.popular .p-all {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 100px 0;
+}
+.popular .p-all .p-head {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.popular .p-all .p-head h6 {
+  font-size: 15px;
+  letter-spacing: 0.1rem;
+  color: gray;
+}
+.popular .p-all .p-head h2 {
+  font-size: 45px;
+}
+.popular .p-all .p-head p {
+  font-size: 18px;
+  color: gray;
+}
+.popular .p-all #sort {
+  width: 150px;
+  padding: 10px 0;
+  cursor: pointer;
+  border: 2px solid black;
+  background: none;
+  font-size: 20px;
+}
+.popular .p-all input {
+  width: 30%;
+  padding: 15px 0;
+}
+.popular .p-all .p-divs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.popular .p-all .p-divs .xeta {
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  color: red;
+}
+.popular .p-all .p-divs table {
+  border: 1px solid orange;
+  background-color: orange;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+}
+.popular .p-all .p-divs table th {
+  border: 1px solid white;
+  padding: 10px 0;
+}
+.popular .p-all .p-divs table td {
+  border: 1px solid white;
+  padding: 10px 0;
+}
+.popular .p-all .p-divs table td button {
+  width: 45%;
+  padding: 10px 0;
+  cursor: pointer;
+  background-color: rgb(241, 104, 33);
+  border: none;
+  color: white;
+}
+.popular .p-all .p-divs #form {
+  width: 50%;
+  margin-top: 150px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: rgb(241, 104, 33);
+  color: white;
+  font-size: 20px;
+}
+.popular .p-all .p-divs #form input {
+  padding: 10px 0;
+}
+.popular .p-all .p-divs #form #submit {
+  width: 200px;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+}
+.popular .p-all .p-divs .div6 {
+  width: 31%;
+}
+.popular .p-all .p-divs .div6 .p-img {
+  width: 100%;
+}
+.popular .p-all .p-divs .div6 .p-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.popular .p-all .p-divs .div6 .p-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  text-align: center;
+}
+.popular .p-all .p-divs .div6 .p-text h3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+.popular .p-all .p-divs .div6 .p-text .p {
+  display: flex;
+  gap: 30px;
+  color: gray;
+}
+.popular .p-all .p-divs .div6 .p-text .p i {
+  color: rgb(241, 104, 33);
+}
+.popular .p-all .p-divs .div6 .p-text p {
+  color: gray;
+}
+.popular .p-all .p-divs .div6 .p-text .btn {
+  display: flex;
+  gap: 10px;
+}
+.popular .p-all .p-divs .div6 .p-text .btn button {
+  border: 2px solid black;
+  width: 100px;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.popular .p-all .p-divs .div6 .p-text .btn #uc {
+  background-color: black;
+  color: white;
+}
+.popular .p-all .p-divs .div6 .p-text .btn #uc:hover {
+  background-color: white;
+  color: black;
+}
+.popular .p-all .p-divs .div6 .p-text .btn #dord {
+  background: none;
+}
+.popular .p-all .p-divs .div6 .p-text .btn #dord:hover {
+  background-color: black;
+  color: white;
+}
+
+.awesome {
+  width: 100%;
+  background-color: aliceblue;
+}
+.awesome .a-all {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 100px 0;
+}
+.awesome .a-all .a-head {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.awesome .a-all .a-head h6 {
+  font-size: 15px;
+  letter-spacing: 0.1rem;
+  color: gray;
+}
+.awesome .a-all .a-head h2 {
+  font-size: 45px;
+}
+.awesome .a-all .a-head p {
+  font-size: 18px;
+  color: gray;
+}
+.awesome .a-all .a-divs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+.awesome .a-all .a-divs .a-img {
+  width: 50%;
+  padding: 40px;
+}
+.awesome .a-all .a-divs .a-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.awesome .a-all .a-divs .a-text {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.awesome .a-all .a-divs .a-text h3 {
+  font-size: 30px;
+}
+.awesome .a-all .a-divs .a-text p {
+  font-size: 17px;
+  color: gray;
+  line-height: 2rem;
+}
+.awesome .a-all .a-divs .a-text h4 {
+  font-size: 22px;
+}
+.awesome .a-all .a-divs .a-text .p {
+  display: flex;
+  gap: 30px;
+}
+.awesome .a-all .a-divs .a-text .btn {
+  display: flex;
+  gap: 5px;
+}
+.awesome .a-all .a-divs .a-text .btn button {
+  border: 2px solid black;
+  padding: 7px 0;
+  width: 150px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.awesome .a-all .a-divs .a-text .btn #bes {
+  background: none;
+}
+.awesome .a-all .a-divs .a-text .btn #bes:hover {
+  background-color: black;
+  color: white;
+}
+.awesome .a-all .a-divs .a-text .btn #alti {
+  background-color: black;
+  color: white;
+}
+.awesome .a-all .a-divs .a-text .btn #alti:hover {
+  background-color: white;
+  color: black;
+}
+
+.team {
+  width: 100%;
+}
+.team .t-all {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 100px 0;
+}
+.team .t-all .t-head {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.team .t-all .t-head h6 {
+  font-size: 15px;
+  letter-spacing: 0.1rem;
+  color: gray;
+}
+.team .t-all .t-head h2 {
+  font-size: 45px;
+}
+.team .t-all .t-head p {
+  font-size: 18px;
+  color: gray;
+}
+.team .t-all .t-divs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.team .t-all .t-divs .div3 {
+  width: 31%;
+}
+.team .t-all .t-divs .div3 .t-img {
+  width: 100%;
+  padding: 0 50px;
+}
+.team .t-all .t-divs .div3 .t-img img {
+  width: 100%;
+}
+.team .t-all .t-divs .div3 .t-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  color: gray;
+}
+.team .t-all .t-divs .div3 .t-text .name {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.team .t-all .t-divs .div3 .t-text .name h5 {
+  font-size: 20px;
+}
+.team .t-all .t-divs .div3 .t-text .name p {
+  font-size: 13px;
+}
+.team .t-all .t-divs .div3 .t-text p {
+  font-size: 17px;
+  line-height: 2rem;
+}
+.team .t-all .t-divs .div3 .t-text ul {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+}
+.team .t-all .t-divs .div3 .t-text ul li {
+  width: 30px;
+  height: 30px;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 10px;
+}
+
+.summer {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../IMAGES/hero_2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.summer .s-all {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 150px 0;
+}
+.summer .s-all .s-head {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.summer .s-all .s-head h6 {
+  font-size: 15px;
+  letter-spacing: 0.1rem;
+  color: gray;
+}
+.summer .s-all .s-head h2 {
+  font-size: 45px;
+}
+.summer .s-all .s-head p {
+  font-size: 18px;
+  color: gray;
+}
+.summer .s-all .s-head p {
+  color: white;
+  font-size: 20px;
+}
+.summer .s-all .s-head h2 {
+  color: white;
+}
+.summer .s-all .s-divs {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.summer .s-all .s-divs .div5 {
+  width: 90px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.summer .s-all .s-divs .div5 h5 {
+  font-size: 40px;
+  color: rgb(70, 221, 176);
+}
+.summer .s-all .s-divs .div5 p {
+  color: gray;
+  font-size: 18px;
+}
+.summer .s-all button {
+  width: 170px;
+  border: 2px solid white;
+  background: none;
+  color: white;
+  font-weight: 800;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.summer .s-all button:hover {
+  background-color: white;
+  color: black;
+}
+
+footer {
+  width: 100%;
+}
+footer .end {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+}
+footer .end p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  font-size: 17px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  nav .container .navbar .n-2 ul {
+    display: none;
+  }
+  nav .container .navbar .n-2 i {
+    display: block;
+  }
+}
+@media screen and (max-width: 990px) {
+  nav .container {
+    max-width: 800px;
+  }
+  nav .container .navbar .n-1 .p {
+    display: none;
+  }
+  .banner .container {
+    max-width: 800px;
+  }
+  .banner .container .b-all .b-head h1 {
+    font-size: 40px;
+  }
+  .banner .container .b-all .b-head p {
+    padding-right: 300px;
+  }
+  .banner .container .b-all .b-head .btn {
+    flex-direction: column;
+  }
+  .banner .container .b-all .b-head .btn button {
+    margin-top: 0;
+  }
+  .popular .container {
+    max-width: 800px;
+  }
+  .popular .container .p-all .p-divs .div6 {
+    width: 47%;
+  }
+  .awesome .container {
+    max-width: 800px;
+  }
+  .awesome .container .a-all .a-divs .a-text .btn {
+    flex-direction: column;
+  }
+  .awesome .container .a-all .a-divs .a-text .btn #bes,
+  .awesome .container .a-all .a-divs .a-text .btn #alti {
+    width: 100%;
+  }
+  .team .container {
+    max-width: 800px;
+  }
+  .team .container .t-all .t-divs {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .team .container .t-all .t-divs .div3 {
+    width: 47%;
+  }
+  .summer .container {
+    max-width: 800px;
+  }
+  .summer .container .s-all .s-divs {
+    width: 60%;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav .container {
+    max-width: 550px;
+  }
+  .banner .container {
+    max-width: 550px;
+  }
+  .banner .container .b-all .b-head p {
+    padding-right: 0;
+  }
+  .banner .container .b-all .b-head .btn {
+    flex-direction: row;
+    margin-top: 40px;
+  }
+  .popular .container {
+    max-width: 550px;
+  }
+  .popular .container .p-all .p-head {
+    width: 100%;
+  }
+  .popular .container .p-all .p-divs .div6 {
+    width: 100%;
+  }
+  .awesome .container {
+    max-width: 550px;
+  }
+  .awesome .container .a-all .a-head {
+    width: 100%;
+  }
+  .awesome .container .a-all .a-head h2 {
+    font-size: 30px;
+  }
+  .awesome .container .a-all .a-divs {
+    flex-direction: column;
+  }
+  .awesome .container .a-all .a-divs .a-img,
+  .awesome .container .a-all .a-divs .a-text {
+    width: 100%;
+  }
+  .team .container {
+    max-width: 550px;
+  }
+  .team .container .t-all .t-head h2 {
+    font-size: 30px;
+  }
+  .team .container .t-all .t-divs .div3 {
+    width: 100%;
+  }
+  .summer .container {
+    max-width: 550px;
+  }
+  .summer .container .s-all .s-head {
+    width: 100%;
+  }
+  .summer .container .s-all .s-head h2 {
+    font-size: 30px;
+  }
+  .summer .container .s-all .s-divs {
+    width: 100%;
+  }
+  footer .container {
+    max-width: 550px;
+  }
+}
+@media screen and (max-width: 576px) {
+  nav .container {
+    padding: 0 10px;
+  }
+  .banner .container {
+    padding: 0 10px;
+  }
+  .banner .container .b-all .b-head .btn {
+    flex-direction: column;
+  }
+  .banner .container .b-all .b-head .btn #bir,
+  .banner .container .b-all .b-head .btn #iki {
+    width: 100%;
+  }
+  .popular .container {
+    padding: 0 10px;
+  }
+  .awesome .container {
+    padding: 0 10px;
+  }
+  .team .container {
+    padding: 0 10px;
+  }
+  .summer .container {
+    padding: 0 10px;
+  }
+  .summer .container .s-all button {
+    width: 100%;
+  }
+  footer .container {
+    padding: 0 10px;
+  }
+}/*# sourceMappingURL=style.CSS.map */

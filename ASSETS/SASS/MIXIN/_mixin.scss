@@ -1,0 +1,36 @@
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin mini{
+    width: 100%;
+    @include flex;
+}
+
+@mixin column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@mixin head{
+    width: 50%;
+    text-align: center;
+    @include column;
+
+    h6 {
+        font-size: 15px;
+        letter-spacing: .1rem;
+        color: gray;
+    }
+    h2{
+        font-size: 45px;
+        
+    }
+    p{
+        font-size: 18px;
+        color: gray;
+    }
+}
